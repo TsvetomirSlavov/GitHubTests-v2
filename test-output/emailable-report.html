@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Command line suite</th></tr><tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,181</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.epam.Tests.Tests</td><td><a href="#m0">openYourRepository</a></td><td rowspan="1">1480065105968</td><td rowspan="1">398</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.epam.Tests.Tests</td><td><a href="#m1">loginGitHub</a></td><td rowspan="1">1480065101766</td><td rowspan="1">3620</td></tr></tbody></table><h2>Command line test</h2><h3 id="m0">com.epam.Tests.Tests#openYourRepository</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotVisibleException: 
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;EPBYMINW0932&apos;, ip: &apos;10.6.212.98&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=7692, browserVersion=49.0.2, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: c34fd794-9c43-484d-8cea-dbfb943b564c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy37.click(Unknown Source)
+	at com.epam.Pages.MainPage.goToYourProfile(MainPage.java:33)
+	at com.epam.Steps.Steps.goToRepository(Steps.java:41)
+	at com.epam.Tests.Tests.openYourRepository(Tests.java:36)
+	at com.epam.Tests.Runner.main(Runner.java:15)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.epam.Tests.Tests#loginGitHub</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
