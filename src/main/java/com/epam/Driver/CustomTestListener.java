@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 
 import com.epam.reportportal.message.ReportPortalMessage;
 
+
 public class CustomTestListener implements ITestListener {
 
 	public static Logger logger = Logger.getLogger(CustomTestListener.class);
