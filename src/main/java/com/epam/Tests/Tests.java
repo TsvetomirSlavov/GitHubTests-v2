@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.epam.Driver.ConfigUtils;
 import com.epam.Driver.CustomTestListener;
 import com.epam.Steps.Steps;
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
@@ -14,11 +15,6 @@ public class Tests {
 	
 	private Steps steps;
 
-	private final String USERNAME = "artur_dvorak@epam.com";
-	private final String PASSWORD = "Apm7390708";
-	private final String BASE_URL = "https://github.com/";
-
-
 	@BeforeClass(description = "Init browser") 
 	public void setUp() {
 		steps = new Steps();
@@ -26,9 +22,9 @@ public class Tests {
 
 	@Test 
 	public void loginGitHub() {
-		steps.openStartPage(BASE_URL);
+		steps.openStartPage(ConfigUtils.getProperty("BASE_URL"));
 		steps.openLoginPage();
-		steps.loginGitHub(USERNAME, PASSWORD);
+		steps.loginGitHub(ConfigUtils.getProperty("USERNAME"), ConfigUtils.getProperty("PASSWORD"));
 	}
 	
 	@Test 
